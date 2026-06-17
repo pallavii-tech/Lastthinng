@@ -1,0 +1,1172 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Inside Me</title>
+
+<style>
+
+/* BODY */
+body{
+margin:0;
+background:#0d0d0f;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family:Georgia,serif;
+overflow:hidden;
+}
+
+/* CINEMATIC LIGHT */
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+background:radial-gradient(circle,#222,#000);
+z-index:-1;
+}
+
+/* INTRO */
+#intro{
+color:white;
+text-align:center;
+animation:fade 2s;
+}
+
+@keyframes fade{
+from{opacity:0}
+to{opacity:1}
+}
+
+button{
+padding:12px 25px;
+font-size:18px;
+cursor:pointer;
+border:none;
+border-radius:6px;
+}
+
+/* BOOK */
+.book{
+display:none;
+width:90vw;
+max-width:750px;
+height:80vh;
+position:relative;
+perspective:2500px;
+}
+
+/* PAGE */
+.page{
+position:absolute;
+width:100%;
+height:100%;
+background:#f4edf0;
+padding:30px 40px 30px 55px;
+box-sizing:border-box;
+transform-origin:left;
+transition:1s;
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+cursor:pointer;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+line-height:1.8;
+font-size:18px;
+border-radius:8px;
+color:#222;
+}
+
+.page::before{
+content:"";
+position:absolute;
+left:0;
+top:0;
+height:100%;
+width:18px;
+background:linear-gradient(to right,rgba(0,0,0,0.15),transparent);
+border-radius:8px 0 0 8px;
+}
+
+.cover{
+background:linear-gradient(135deg,#5e3a4a,#7a4b5f,#3b2b34);
+color:#f5e6ea;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+font-size:22px;
+box-shadow:0 0 25px rgba(0,0,0,0.7);
+}
+
+.flipped{
+transform:rotateY(-180deg);
+}
+
+@media (max-width:600px){
+
+.book{
+width:95vw;
+height:85vh;
+}
+
+.page{
+padding:20px 20px 20px 45px;
+font-size:16px;
+line-height:1.6;
+}
+
+h1,h2,h3{
+font-size:20px;
+}
+
+button{
+font-size:16px;
+padding:10px 20px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- INTRO -->
+<div id="intro">
+<h1>One Last Thing...</h1>
+<button onclick="start()">Open My Heart ❤️</button>
+</div>
+
+<!-- BOOK -->
+<div class="book" id="book">
+
+<div class="page cover" onclick="turn(this)">
+<h2>Lost In Feelings ❤️</h2>
+<p>Click To Open</p>
+</div>
+
+<div class="page" onclick="turn(this)">
+<h3>❤️ Heyy Mine ASHISHHHHH ❤️</h3>
+<p>
+13.08.2025 to 13.05.2026<br>
+Together 9 months completed
+</p>
+</div>
+<div class="page" onclick="turn(this,'music2.mp3')">
+<p>
+Before you start reading this diary, make sure you have enough time 
+Otherwise, close it now and come back when you can truly read it
+Kyunki..jb pdho tb end tk hi pdhna, middle m chorna mt chahe accha lge ya bura lge </p>
+
+</div>
+
+<!-- VIDEO MEMORY PAGE -->
+
+
+<div class="page" onclick="turn(this,'music3.mp3')">
+<p>
+Chlo shuruu kreee????😙
+</p>
+
+</div>
+
+
+
+<div class="page" onclick="turn(this,'music3.mp3')">
+<p>
+ <br> Pakkaa naa.......puri padhni pdegi ek sath </br>
+ TBH......pta ni kaha s start kru or kaha s nhi...bss mnnn kia likhne ka toh aagyii
+ <br> Chlo vha s start kia jaye..jha s kbhi start hona hi nhi chahie tha</br> 
+
+</p>
+
+</div>
+
+
+<div class="page" onclick="turn(this,'music5.mp3')">
+<h2>Starting Phase ✨</h2>
+<p>
+Mene sabse pehle tumhe blue T-shirt mein dekha tha 💙. Us waqt honestly laga ki yaha sabme se bas tum hi thode bacche jaise lag rahe ho. Na jane kyu ush bheed m bs tumko hi dekha tha mene 👀.
+
+1–2 din baad mai Ankit ki team me shift ho gayi. Mai unki team ki akeli ladki thi. Ankit ne bola tha ki side wale system par baithna, peeche nahi… par maine fir bhi last corner wala system choose kiya — vhi jahan tum usually baithte the 🤍.
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Vhi meri Ashish Yadav, Aryan bhaiya aur sabse introduction hua 🙂. Pehle 2 din me unke saath baithi aur tumhe ek din bs dur se dekha, wall side me baithte hue 🤍. Us time humara interaction hua hi ni tha bs thoda bohot hoga syd s.
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Ek din attendance correction wali date thi. Us din tumhara reaction dekha, hashi aayi 😄. Same day m syd kuch baat ho rhi thi, tum kuch kehna chah rhe the muje… par ruk gaye. Mene bola “haan haan bolo….bolo ab” par tum sirf hash karke reh gaye  (Darr jo lggya tha mujse😎).
+
+Next day tumhara week off tha. Usi din maine leave li kyunki Raksha Bandhan tha aur main 3 din ke liye ghar chali gayi . Vha mujhe ek unknown number se message aaya — Ashish this side krke tha. Tab tak mujhe tumhara naam pata chal gaya tha, toh ek second ke liye laga tum ho… par wo koi aur nikla 😅.
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Jab wapas aayi toh apne system par baithi aur maine apna phone kit mein hide karke tumhare wale system ki seat par rakh diya. Mene apne system se tumhara login open karke logout kar diya.
+
+Ush din 13-August-2025 tha   
+Phir tum aaye aur bola, “ye batua kiska hai?”  
+Mene jaldi se bina kuch bole ftaak s lelia.
+
+Tum bole, “ye system mera hai jahan tum baithi ho.”  
+Mene kaha, “ab mera ho gaya… tum yahan baith jao.” 
+
+Aur tum bina argue kiye turant baith bhi gaye 🤍.
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Uske baad thoda-thoda interaction start hua,, Tb first song hua humara,,, tussi jithee vi jande ho sirra krande ho daso ki chahndoo...and tumhara vo sirra ko rora krande do😂😂
+or Tum bolte the “itni calls mat liya krr” 📞😂. Tumne mujhe properly Chintu lagana bhi sikhaya.
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Aur sirf 2 din mein hi tumne mujhe snacks pe chalne ko bola ☕.  
+Us time mere dimaag mein bas ye chal raha tha — “main kisi ladke ke saath kabhi bahar nahi gayi… kyun jaun?” 🙈
+
+Mana bhi karna chahti thi… par kahin na kahin jaana bhi chahti thi… finally mene haa krdiiiiii.
+Tumne li tumhri fav black coffee and mai chai lover...
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Then 15 August aya …  
+Jb mai red suit pehn kr aayi (eyeliner, bindi, open hair) 💃✨… tum kehne lge — “aaj toh Radha bn kr ayi ho.”🤭(Sach btaau tumhre wjh s hlka sa touch up krke ayi thi😅)
+
+Fhir dheere dheere hum break pr sath jane lge 🙃🙃, khane peene lge ek sth, ek hi sath bethne bhi lge.
+Fhir n meri sis ka b'day aane wala tha toh mene kaha kuch pta h yha aas pass shopping ka,,,mene zudio pta kia and tumse pucha ky help kroge and tum be like "ha ha kyu nii bs btana kb chlna h"
+
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Then  
+Hum 1st time Zudio gye(10 -Sept-2025). Mene trial room se bahar aakar tumhe bulaya — “Ashishhh…” 😄  
+Tumhari ankhen sach me chamak uthi thi ✨.
+
+Tumne dress select krvayi and mere bhai k lie bhi tshirt and drop kia tumne hum apne apne raste.... Or fhir tumhre b'day pr tum leave lekr bethe the 16-Septmeber
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Mai auto me thi office aarhi thi …  
+Jb tumne first time call kia… mene ftaaak s pick kia vo ankit k cold k lie muje lga tumhe h...mene kaha ha ha mere pss h abhi aati hu
+ek toh 1st time tumri voice sun rhi thi,,,lga ki tumko h(awaaz hi esi h😏😂)..
+Then muje cough tha 🤧…  
+Mene tumhe message 1st time wtspp pr “please vicks le ana” and tum lekr aaye the 🥹💙-awwwwww
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Office me sabka tease krna 😆, TL ka bolna break exceed ho jata hai…  
+sab kuch accha sa lagne laga.  
+Pata bhi nahi chala kab strangers se hum ek true couple jaisa feel karne lage ❤️.
+Or tumhra kehna office m bandi h tu meri...
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Vo group p kuch ulta seedha mssg krdia tha tumne, mene kaha DM krke y ky h dlte kro ishe jldi se, tum yrr baby girlll fenshh gya mai toh ye vo mai khi ky hua ki yr 'delete for me' krdia glti s- mene kaha admin(Yaseen) h ushe kaho delete krdega ese krke then wtsppp pr starting hui......
+Tum be like- baby girlll fenshh gya mai toh( y sunkr hshi ayii hainn fenshhh ya fashh or smile ki baby girl??? bbgg?? hainn)
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Fhir.....first time reel share ki 'For a reason' ki tu esi lgti h...ishki jesi, mene kaha khi nhi, jb vo song first time suna and then ab vo ek memory bnkr rh gya h for forever. ♾️❤️.
+Or vo coke s shuruaat ek dusre ka jhoota khane peene ki yaad h n???,,,,,burger share krna, chay share krna, or baaki sbb..........alg hi tha sb ush time
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<h2>Ghumne wala Phase 🚲✨</h2>
+<p>
+“Delhi kabhi nahi ghumi na?  
+Chl mai ghumaunga puri Delhi tujhe.” ❤️
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Fhir jaate h hum Atta market-sector 18,,,yhaa se bike s seedhaa suuuuuuuuu krke, meri toh ankhen hi nhi khul rhi thi////areee yarr vo highway walaa scene yaad h naa... Kese bhainsh aagyi thi yr samne(pta chlta kuch hogya h hume,mere ghr wale be like tu yha pahuchi kesee phle y bta, mallam patti baad m hogi) daring scene tha sachme yarr Fhir diwali k lie shoppping ki mene ghrwalo k lie with your help obv..
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Then......we planned to go sarojani nagar, mai aayi Kalidni tk and tum bike s black helmet and white tshirt.......uffffff ky lg rhe the by god fida hi si hogyi thi mai fhir shoppping ki humne jo bhi tha vo tumne mera and mene tumhara hath thama rha ush bheed m, white kurti li and meri abhi tk chl rhi crocs vo bhi and humara tanjiro.
+
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+
+<p>
+Dandia night aane wali thi tum ki chlenge hum sath m.....mai tere lie apne cousin s le aunga lehnge wgrh tu decide krlio ....2pr mere ghrwalo ki wjh s and ush time utnaa jyadaa bonding thi ni ki mai ese night out k lie chli jauuu obvv darr tha,,,tum samjhe bhi.... tumne humayu tomb jane ka plan kia but tumko dandia night m bhi jane tha....frnds tumhare call krrhe then tum gye vha...or pucha konsa kurta pehnu mene kaha black toh abhi pehna tha you can try blue fhir bsss ghumte ghumate aagye vpish hum.
+
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Jb tumne reel share ki with me Sunder Nursery ki yha we can go, Then we decided to go there and tumne dress code btaya ye ye pehn kr aaio and same vhi kia mene and Hum mile Kalindi metro pr and the date was 8th of November 2025, Jha hum Sunder Nursery ghume, baate ki, tumne apni baate share ki, meri acchi acchi photos click kie, tumhre sth m click kie jb 1st time itna close aaye the, godi m uthaya, thumake maare videos shoot ki and all or meri godi m sar rkh ke sona(Duppate se dhak dia tha and you were trying to kiss me..ki aaja chl chl ..hehehhee)...then tumne Darla ka btaya sb... Mene hug kia tum bench pr bethe the and that time 1st time hug kia tha humne......
+ </p>
+</div>
+<div class="page" onclick="turn(this,'music4.mp3')">
+
+<p>
+Fhir tum aaye Kalindi drop krne muje...metro tk lift se... Then pta hi h kya hua tha...tum fhir console kia ki dekh mai esa nhi krunga and first time you kissed me on my forehead but mere mnnn m khi n khi kuch rh gya tha.. metro m pura time vhi sochte rehna ki y kya hogya krke and next day tumne leave li thi, simba k yha shadi m jane k lie and ushk next day tum aaye jb mai tumse baat nhi krrhi tum puche kya hua fhir hum canteen gye upr jha baate ki, ki y sb theek ni hua tha jo tha, consent ni tha and y vo krke, baate wgrh hui fhir thoda theek lga, but mnn m tha vo sb
+
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Office ki itni saari memories hain — saath mein masti karna, ek saath baithna, hasna, khana-peena, breaks manage karna, bahar ghoomna, bike rides par jaana… itna sab kuch. Shayad main yahan properly express bhi nahi kar pa rahi hu ki mere andar kitni feelings hain. Kuch cheezein words mein likhi hi nahi ja sakti. Jo mere mind mein, meri memories mein settle ho gaya hai na… wo honestly bahut special tha. Aur sach kahu toh main kisi aur ko kabhi explain nahi kar paungi ki wo sab mere liye kya tha — because only I know what I felt. Really.
+
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Vo tumhara whatspp pr reel share krna,mera tumhara insta account dekhna(Ki bhaiii tgdaa account h ishka tohh) fhir tum be like oye tune toh kaha tha insta nhi then mene clear kia ki btaya tha ki he but utna use m nhi, fhir tumne insta pr request send ki...fhir insta pr shift hogye
+
+</p>
+</div>
+
+
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+jb hum close kya kuch bhi ni the syd in starting days tum,,, ki isse koi hth ni lgayega, even handshake tk ni krne dete the 🤭🫶, vo suraj keral wale s bachana and baaki sbsse,,, muje bohot accha lgta tha vo sb 💛  
+Office ka wo time… breaks ka wait karna, sirf tumse milne ke liye . Bahar ghumna, bike rides 🏍️, street wali chai, burger aur uncle ke momos , sab kuch itna simple tha par itna special bhi ✨. Tumhare sath break lena, masti karna 😄, lunch share karna , snacks ke liye saath jana — wo choti choti cheezein hi meri favourite memories ban gayi .
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Vo time Team m, arbaaz ka vo khasna uhh uhh krke 🤣 and baaki sbka chidana or chidna humse aaye haaye 😜❤️ mzedaar tha.  
+Vo Handshake style code humara cool unique tha 🤝✨ and sbbb be like oommffoooooo 😏,,,TL or vo Tapri chai wale bhaiaya, bcche sb mze lete
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+ Jb vo din aya ki aaj s tum dono alg bethoge krke....bhaiiii kitni peak level jealousy ho chuki thi 😭🔥 bs apne team walo or ankit, moti ko chorkr.  
+Separate bethana ushk baad bhiii, manager be like- shift change krao ishki, same week off n dena 😂🤭 hume,,, alag hi level ka mza sa tha vo bhi dekho dekho kese chid rhe h humse 😌❤️
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Vo separate krke hum, ek sath amne samne bethna chair upr krke ek dusre ko tadna 👀❤️, mere sth acchi neeyat wale ladko ko tumhara bethana mere sth 😌🫶.  
+Fhir vo Ashish Verma ka vha s hta kr Cabin m shift krna, tb bhi hum konsa rukne wale the 😏  
+Break toh sath hi lete but jb khane k baad need aati thi muje or tumhe 😴, tum uth kr mere pass aate… mai ush time chintu lga kr tumhre kamar pr sarr rkh kr soti 🥺❤️ tum ek hth s mere sarr ko sehalana 🤍.  
+Adat si hogyi thi muje ushki 🥺.  
+Vo bich bich m concern h , concern h krke udhr QA k pass khada hona , and ek dusre ko tadna 👀😂, QA feedback lgakr mere pss chle ana… sachme bohot funny but cute tha 🫶😄.
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Aur jis din tum office nahi aate the, sach bolu toh pura din ajeeb lagta tha 😔 Dil karta tha main bhi week off le lu bas tumhare sath time spend karne ke liye.  
+Apni stupid si masti, harkatein, hasi-mazaak … itni vibe match hone lg gyi pta hi nhi chla.  
+Kab pata hi nahi chala ki ye chhoti-chhoti moments itni special memories ban jaynge😊.
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Mene tumhe kaha smoking chor do,,, bs ek week k lie promise ki "tumhe mai chup kra dungi”🤭 ...but tumne mera promise break krdia 💔.  
+Ek night phle hi (5th December) ko ese hi tukke m pucha ki aj tumne smoking ki h n… and vo sach nikla 😞.  
+Mene kaha theeke muje sona h bye krke offline hogyi .  
+And very next day tum vaibhav k sath fhir smoking krke aagye 😔… jbki mai gussa tha tumhre lie hi socha tha.  
+Uske baad tum khud alg rooth gye 😶, cabin m beth gye, lunch time m earbuds lgakr khana , snacks time m bhi mujse puchna tk ni… ush time mai 1st time shristi k sth break pr gyi 🥲.
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Humara Tanjiro 🧸 jo mere sth rehata tha jbse tum alag bethate the, vo mene return kia shift over me.  
+Mai gussa tha bhaiiii 😤… bs bye bola, hath bhi milaya 🤝 aur chli gyi.  
+Ush din Saturday night thi … tumne bike ride ka plan kia tha but vhi ek din phle hi wtspp pr dimg khrb krdia tha 😔.  
+Mai sochi 9 bje message ya call aayega … jo ki ni hua.
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Ankit ka mssg tha ki jiska week off h kl ushe ana hoga…  
+tum mssg krte ho, “Baby kl humara week off h hum nhi jaynge baat khtm” .  
+Mai gusse me thi 😤 mssg dekha hi ni… 9:30 pm k around reply kia — baby??  
+Tumhara net off paya… mai shocked 😳.  
+Socha aaj song sunkr ni jarha h kya....ese kese ho skta h … net off hi rha.
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Mai ush night late s soyi 😞… bas gussa ki yar y kitna makkaar h.  
+Khudki glti accept hi nhi krrha… mujhe akad dikha rha h 😤... ab krke dikhaungi baat isse
+Mai bhi ni krungi baat ab… jaooo … aur mai sogyi.
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Next day 7th of December… Kavita ka call aya .  
+Mai breakfast lekr bethi hi thi… Zoya and Arzoo bhi vhi thi.  
+Kavita boli — Ashish ka pta h tumhe?  
+Mene kaha haa aaj ushka week off h…  
+Phir boli — kal raat accident ho gaya 😨.  
+Mere muh se nikla — kyaaa?? ese kese…  
+Logout k baad ghar jate time accident hua… abhi Fortis hospital me admit h .
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Us time main completely blank ho chuki thi. Mujhe kuch samajh hi nahi aa raha tha ye kya hua or kya horha h.  
+Andar se panic 😰, rona , gussa  — sab ek saath.  
+Mai tumse gussa bhi thi… tumhara wait bhi kar rahi thi ki ab message aayega …  
+aur mujhe bilkul nahi pata tha ki tumhara accident ho chuka hai 🥺.
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Kisi ne mujhe bataya tak nahi. Jab pata chala toh maine ma’am se bola mujhe properly batao. Moti ne tumhari photo share ki… aur tab bhi main believe nahi kar pa rahi thi. Jaise hi mene tumhari photo dekhi, main process hi nahi kar paayi. Pata nahi kaha se itne aansu aa gaye… main literally phoot-phoot kar ro padi,
+ bohot ajeeeb saa hogya tha vo 1st time tha jab mai tumhree lie royii vo bhi itna.
+
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Sabse zyada guilt ye tha ki kal hi hum shi s baat bhi nahi kar paaye the. Pehli baar hum almost ladayi jaisa phase mein the… office mein bhi tumse theek se baat nahi hui. Aur next day tumhare saath itna bada ho gaya, aur mujhe pta tak nahi tha. Ye thought hi mujhe bohot tod raha tha.
+Main bas roti hi ja rahi thi… itna ki kisi ne mujhe inform bhi nahi kiya. Tab meri roommate aayi — “Aarju kya hua? Aise mat ro, main hoon na.” Maine bas ek hi baat boli, “Mujhe waha jaana hai… please mere saath chalo.”
+
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Kavita ma’am ne bola shaam ko chalenge, par mujhe wait hi nahi ho raha tha. Maine kaha main baad mein phir aa jaungi, par mujhe abhi jaana hai. Mujhe bas address chahiye tha. Maine sab kuch chhod diya — nahana, khana, kuch bhi matter nahi kar raha tha. Jaldi se jeans aur top pehna aur ready ho gayi nikalne ke liye.
+Maine ma’am se bola bas bata do waha kaun hai, kisi ka number de do… main khud pahuch jaungi... Fhir call aaya ki tumhe Fortis Hospital se kahin aur shift kar diya gaya hai… aur ab kisi ko exact location bhi nahi pata
+
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+
+<p>
+    Uske baad main bas numbers collect kar rahi thi — Vaibhav, Gaurish, Sanawar… jo mila sabko call kiya. Par koi phone nahi utha raha tha. Maine tumhe bhi call kiya… ring ja rahi thi, net on tha— par koi response nahi.
+    Us moment mujhe samajh hi nahi aa raha tha ki jaaun toh jaaun kahan. Dil bas ek hi cheez keh raha tha — mujhe tumhare paas pahunchna hai kese bhi… par raste hi nahi mil rahe the.
+
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+    
+<p>
+Mujhe kuch bhi nahi pata tha tumhare baare mein, tum kahan ho, kis condition mein ho… kuch bhi nahi. Main baar-baar Gaurish ko call kar rahi thi, par wo voicemail par ja raha tha. Maine voice note mein bhi bola, “Please Gaurish, bata de wo kahan hai… mujhe usse milna hai, mujhe uske paas jaana hai.” Par wahan se bhi koi response nahi aaya.
+</p>
+</div>
+
+
+
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+   
+<p>
+    Maine somehow khud ko calm kiya aur pucha, “Aunty, Ashish kahan hai?”
+Unhone bola unhe exact nahi pata. Maine request ki, “Please aunty bata dijiye, office wale bhi puch rahe hain… mujhe bas location chahiye.”
+Tab unhone Safdarjung Hospital ka naam bataya. Maine turant roommate ko bola, “jaldi note kar naam… Safdarjung.”
+Thodi der baad Vaibhav se baat hui. Usne bola, “Tu us number par call mat kar, phone ghar par aunty ke paas hai. Wo Safdarjung mein hai, main bhi aunty ke saath hoon. Thodi der mein hospital jaunga, fir teri baat kara dunga.”
+
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+ 
+<p>
+   Main literally rote hue usse request kar rahi thi, “Please ek baar baat kara de.”
+Wo bol raha tha, “Pagal tu kyun ro rahi hai, sab theek hai, usko kuch nahi hua.”
+Par mera wait hi nahi ho raha tha. Main bas baar-baar bol rahi thi — “Please abhi jaa, abhi baat kara de.”
+</p>
+</div>
+
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+ 
+<p>
+ Finally usne video call karayi. Jab screen par tumhara halka sa face dikha… us moment ko main explain nahi kar sakti. Dil ko thodi si tasalli mili, par tumne face side kar liya aur call cut ho gayi.
+Usse pehle bhi sab bol rahe the ki gharwale usko khana khila rahe hain, sab log paas mein hain, aur tum baat nahi karna chah rahe ho. Main bas ek hi request karti rahi — “Please ek baar baat kara do.”
+
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+ 
+<p>
+Phir jab finally phone tumhare haath mein aaya, tumne bas itna kaha, “Main theek hoon… sab theek hai. Gharwale yahan hain, thodi der baad call karta hoon.”
+</p>
+</div>
+
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+ 
+<p>
+   Tumne call ki, Us waqt maine apne aansu itne zor se control kiye the… kyunki mujhe pata tha agar main ro padi toh tum aur disturb ho jaoge. Tumhari condition already theek nahi thi. Maine khud ko sambhala, normal banne ki acting ki, aur thodi si baat ki — bas itni ki tum theek ho, kaise hua, sab okay hai na.
+   Zyada baat nahi ho paayi, kyunki sab log tumhare paas hi the… par us chhoti si conversation ne mujhe thoda sa saans lene di..
+   Ek toh hum plan krr rhe the ki sath m resign denge ye month hum moz masti s guzarenge but kismat dekho n kaha s kaha le aayi.
+
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+ 
+<p>
+   Tb humne 1st time call pr baat ki even video call ki jese tese tum toh krna hi ni chah rhe the face k chot k chkkr m...
+  Us time bas ek hi cheez thi — tumhari fikr, tumhari tension. Tum kaise ho, pain mein toh nahi ho, theek se khana kha rahe ho ya nahi… office mein mera bilkul bhi mann nahi lagta tha
+
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+ 
+<p>
+   Rathi bhaiya, Vaibhav- or baki sb. Roz bolte, “chal break par chalte hain, kuch kha le, snacks par chal.” Par mujhe lagta tha… jab tum nahi ho toh kisi bhi cheez ka kya matlab hai...sb kuch bekrr sa lgne lga tha
+    Office mein sab log tumhare baare mein hi puchte rehte — “ab kaisa hai? hospital mein hai? better hai?” Aur jaise hi koi tumhara naam leta, meri aankhon mein automatically aansu aa jaate. Main khud ko samjhati rehti — “pagal, sab theek ho jayega… strong reh.”
+
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+ 
+<p>
+   Phir mera resign karne ka time aaya. Maine resignation diya toh Ashish Verma sir bole, “uske saath itni tragedy ho gayi hai, tum kyun ja rahi ho?”
+Maine bas itna kaha, “Sir, mujhe bs jaana hi hai.”
+   Kaafi convince karne ke baad manager ne mera resignation accept kiya. Aur us time ek ajeeb si closeness aa gayi thi humare beech… kyunki tum hospital mein the aur hum sirf break time par baat kar paate the. Video calls, normal calls — bas tumhari health ki updates, tum kaise ho, doctors kya bol rahe hain… main har kisi se tumhare baare mein puchti rehti thi.
+
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+
+<p>
+    Next day jab accident ke baad office gayi na… wo din bahut ajeeb tha. Sab same tha, par sab kuch different lag raha tha. Har jagah bas tumhari absence feel ho rahi thi. Main poora din aansu control karti rahi, sab mujhe dekh rahe the, sab puch rahe the.
+Usi din subah tumhara call aaya. Main seedha washroom mein jaake baat karne lagi. Tumse baat karke thoda relief mila… but dusri trff mai bss roye jarhi thi
+
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+   
+<p>
+Maine khud ko control kiya. Tumne bola, “haan main theek hoon… breakfast bhi kar liya.”
+Aur us moment bas ye sunna hi mere liye enough tha.
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+   
+<p>
+Office mein mujhe har jagah tumhari hi yaad aati thi. Lagta tha yaar yahi toh baithta tha, yahi se uthta tha, aise baat karta tha, waise hasta tha… har corner tumhari presence yaad dilata tha. Pata nahi abhi iss time tum yahan hote toh kya kar rahe hote — kab aate, kab jaate… sab kuch yaad aata rehta tha.
+
+Wo phase honestly bahut ajeeb tha… jaise office same tha, par tumhare bina kuch bhi same nahi lag raha tha .
+</p>
+</div>
+
+
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+    Phir tumhari life ka wo phase aaya… bike accident wala. Uske baad bahut kuch change ho gaya. Shayad wahi time tha jab hum aur zyada close aa gaye. Main tumhe zyada time dene lagi, tum bhi mujhe apna time dene lage. Free moments ho ya busy days — meri attention bas tum par hi rehti thi.
+Har break me call, lunch ke baad call, ghar aake call, raat bhar baatein, hasi, random talks… shayad ye sab hi hume itna close le aaya. Attachment kab love ban gayi pata hi nahi chala... muje pta hi ni chla ki tum mere lie itne imp. bn chuke ho
+
+</p>
+</div>
+
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p> 
+      Jab main tumse milne hospital aayi thi na… sach bolu toh wo moment kisi movie scene se kam nahi lag raha tha.
+
+   Main AIIMS metro par utri thi aur exit gate hi nahi mil raha tha. Tum aur Vaibhav continuously call kar rahe the — “idhar se aa… udhar se aa… map follow kar.” Par mujhe exit mil hi nahi raha tha. Almost 20–25 minutes ho gaye the mujhe wahin bhatakte hue
+   Aur us waqt tumhara operation bhi hone wala tha… tumhare papa upar wait kar rahe the. Phir bhi tum khud neeche mujhe pick karne aa gaye — hospital wali operation dress mein. Sach mein… tum us moment alag hi lag rahe the.
+
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+   Jaise-taise main hospital gate tak pahunchi. Tum phone par bol rahe the, “haan bas seedha aa… mujhe dikh rhi h tuu… ab wait nahi ho raha..bhaag kr aaaa jldii.”
+Aur honestly, mujhe bhi nahi ho raha tha. Bas ek hi thought — kab tumhe dekhungi. Itne din continuously saath rehne ke baad almost 8 din baad mil rahi thi tumse… excitement peak level par thi. I really can’t explain that feeling.
+</p>
+</div>
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+   Phir jaise hi maine tumhe dekha… main ruk hi nahi paayi. Seedha bhaag ke aayi. Tum bhaag nahi sakte the, toh wahi khade rahe… aur jaise hi maine tumhe hug kiya — bhaiiiiiii yarrrrrrr.......wo hugggg different tha.
+Aisa laga jaise first time hug kar rahe ho. Wo feeling bilkul unique thi… aaj tak waisa hug dobara nahi hua.
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+  Itni public, hospital ke beech, logon ke saamne… par us moment mein sirf hum the. Bas gale lage rahe… time ruk sa gaya tha. Vaibhav side se bol raha tha, “bas karo ab, baad mein mil lena, andar chalo.”
+Par hum dono sun hi nahi rahe the… bas ek-dusre ko hold kiye khade the.
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+    Wo hug… sirf hug nahi tha. Wo relief tha, fear ka end tha, aur shayad bina bole sab kuch keh dene wala moment tha...sachmee...bohot acchaa moment tha🤍.
+ <br>     Phir hospital mein tumhari mummy se milna, papa se milna, aunty se baat karna….. aunty k sth time spent krna ek family wali feeling dene jesa tha..sab kuch itna real lag raha tha 🤍. Aunty ne tumhare baare mein itni saari baatein share ki — tumhare bhai-behen ke baare mein bhi, jo tumne kabhi mujhe batayi hi nahi thi.</br> </p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+    Us time mujhe thodi si sharm bhi aa rahi thi 😊.
+
+Aur wo lift wala scene… honestly kitni memories hain us hospital ki. Kabhi corridors mein ghoomna, kabhi idhar-udhar baithna. Beech-beech mein aunty ka call aa jata tha — “beta bas karo, ab use jaane do, upar aa jao.” 😄
+  Sach bolu toh bilkul nahi lag raha tha ki tum patient ho. Tum mere saath poore hospital mein idhar-udhar ghoom rahe the, jaise normal day ho. Humne  photos click ki, videos banaye, saath mein khaya-piya… sab kuch itna light aur happy feel ho raha tha...mai ush din milkr tumsee bohottttt khusssshhh thiii bohotttt
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+   Aur jab shaam ko main ghar wapas aayi na… dil full tha. Wo din honestly best… best… bestest day tha mere liye ❤️. Really unforgettable
+       Fhir ataa h, December wala phase… jab tumne mujhe ghost kiya tha — honestly bahut worst tha. Sach mein, bahut makkaar ho tum 😌. Itne time tak baat na karna first time hua tha humare beech. Main gussa bhi thi… par gusse ke peeche sirf care thi. Main bas itna chahti thi ki tum bahar na jao..ghr aate hi , apna dhyaan rakho....pr nahiii
+
+    </p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+    Par tum bina bataye bahar chale gaye… aur baad mein casually bol diya ki “main bahar hoon.” Obviously gussa toh aana tha na mujhe. Tum idhar-udhar ja rahe the, Harsh ke saath ghoom rahe the… aur mujhe lag raha tha ki ye sab tumhare liye sahi nahi hai...
+jb baat ki ish phase k baad.... tumne reason de diye — kaam ki tension, exam ki tension, life ki tension, sab kuch thi( Ha bhaiii jnati huuu..pr mene kbhi disturb kia kya )
+</p>
+</div>
+   
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+ Mere birthday ke time jab main ghar gayi thi, tab tumhara message aaya… New Year par bhi message kiya tumne. Mene ese hi bol diya ki main IR karwa chuki hoon, office aur Noida chhod rahi hoon( Taaki tum mujse kuch baat krna shuru kro).. Phir Rati bhaiya wali ki ZTP ka jab maine tumhe message kiya, tumne ulta puch liya — “mujhe message kyun kar rahi ho? Hope kyun de rahi ho?”
+Ha manaa ki tumne muje convince kia tha, baat krne ka try kia tha pr kyaa usse sb shi hota, jo mere mnn m tha, itni bhi value nhi thi ki kya meri muje share krpao bs seedha baat krna bnd.</p>
+</div>
+
+
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+        Uske baad wali fight… aur phir wo long conversation — subah ke 4–5 baje tak. Shayad 13–14 January ki night thi. Us conversation ke baad sab slowly normal hone laga.
+
+ Phir tumne suddenly pucha — “Kya mai girlfriend bnalu?”
+Aur mene kaha "NHIII”
+Tumne kaha tu bnegi meri GF??
+Mene kaha ha — “main hoon na.”
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+    Uske baad tumhara I love you, tumhara attachment… real sorry bolna… sab kuch dheere-dheere start hone laga ❤️..
+Subah se uthne se lekr raat sone tk bs baate, calls, video call, watching reel together and UNO bhi khelna, mze daar tha sbbb alg hi time tha vo </p>
+ </div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+   Phir hum mile. Tumhara accident ho chuka tha aur maine bola tha beard shave mat karna, grow karne dena. Jab Huda Market mein first time tumhe beard look mein dekha na… seriously kitne handsome lag rahe the tum ✨.
+    Vo hudda market m propose krna vha colony k seat pr, road pr chlte m</p>
+
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+   Wo din bhi alag hi tha — photos click karna, society mein ghoomna, khana, baatein, hugs… sab kuch peaceful sa. Phir baar-baar Huda Market mein milna, 3–4 baar milna… aur phir Kalindi Kunj McD wali meeting.
+  Aur haan… lift wala moment 🙈 — naam lene mein bhi sharm aati hai, but wo bhi ek special memory hai… shayad last wali pure moment memory.
+</p>
+</div>
+
+    
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+Uske baad life sorted lag rahi thi. Sab normal, sab perfect. Par hota na… jab life smooth chal rahi hoti hai, tab ek phase aata hai jo sab test kar deta hai.
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+    Tumhe already pata tha ki meri life mein koi aur bhi tha. Phir bhi tum mere saath relation mein aaye, adjust kiya, manage kiya… honestly I really appreciate that 🤍.
+<br>    Sach ye hai — main fake kahin bhi nahi thi. Main usse bhi care karti thi… aur tumse bhi. Confusing tha, complicated tha… par real tha
+</br> 
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+  Main tumhe zyada time dene lagi, zyada priority dene lagi. Calls, texts, updates — sabse pehle tumhe. Usse bol deti thi tired hoon, so rahi hoon… par actually tumse baat kar rahi hoti thi.
+
+Galat tha shayad… par us waqt jo bhi tha, dil se tha
+Baaki… uske aage ki story tum already jaante ho.... Chhodo. 🤍
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+ Tumharaa mere lie pyar jatana, vo paragraphs, vo texts, vo close stories, vo baate, vo bohot kuchh,,,,,,Thankk youuu so muchh for being only mine ashishhh babyy that time.....
+<br>   Kehna bohot kuch chahti hu, batana chahti huu bohot kuchh,,,, pr hr baar ki trh mai meri feelings share krne m
+   kacchi hu thoda...
+</br> </p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+ 
+  
+<p>
+    I still remember those bike rides… jab hum bahar ghumne jaate the aur main tumse chipak kar baithi rehti thi. Tum hamesha bolte the, “hawa mat aane dena, properly pakad ke baithna”… aur hum songs sunte hue bas chalte rehte the.
+I'm missing that part… and tumhri bike k chaabi k lie jhumka aaj bhi mere pass new pack rakhe h...
+
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+ 
+<p>
+       Tumhara mujhe drop karna vo jgh ab bohot yaad dilati h, raste bhar random baatein, hasi-mazaak… office ki itni saari chhoti chhoti memories hain ki shayad main kabhi sab words me explain hi nahi kar paungi. Shayad tumhare liye wo normal ya daily routine tha… but mere liye life ka first and last experience tha..(last kyunki mai ab kisi pr trust ni kr skti itne sb k baad)... Mene pehli baar kisi ke sath itna close feel kiya, pehli baar kisi ke sath itni memories banayi. Tumhare sath wala phase meri life ki ek alag hi memory ban gaya.
+
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+
+<h2>🎬 Movies That Remind Me Of U ❤️</h2>
+
+<p>
+Laila Majnu ✨ <br><br>
+Ok Jaanu 🤍 <br><br>
+Ae Dil Hai Mushkil 💔 <br><br>
+Tere Ishk Mein 🎵 & Raanjhanaa 🌸 <br><br>
+Aashiqui 2 🥀 & Rockstar 🎸
+</p>
+
+</div>
+<div class="page" onclick="turn(this,'music4.mp3')">
+
+<h2>✨  Things I Wanted To Do With You… ✨</h2>
+<p>
+• Night bike ride together and muje bike seekhni thi <br>
+• Pahado me ghumna ⛰️ or adventure krna(but hath tod bethe)<br>
+• Chirkut wali harkatein 😄 <br>
+• Dancing reel moment <br>
+• Comedy show & movie theatre  <br>
+• Late night walks  <br>
+• Rain walk without umbrella  <br>
+• Puri Delhi ghumna ❤️ <br>
+• Tumhe khush aur successful dekhna🤍 <br>
+
+</p>
+
+</div>
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+  EK baar ki baat yaad h ky tumko, hum bike pr the, resign dene wale the- tum kh rhe the ki 
+  tumhre words m bta rhi hu, gaalii ni de rhi, "ki mai tere sth itni backchodi krna chahta hu itni ki tu humesha yaad rakhegi ki haaan tu mujse mili thi"
+  Sach kaha tha tumne, humeshaa yaaad rakhungi,,, bohot kuch kia he tumne-mene sath m...
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+Kabhi kabhi lagta hai agar feelings itni deep nahi hoti, toh shayad aaj bhi hum bahut ache friends hote. But destiny dekho na… kaha se kaha le aayi hume. Kuch aur socha tha life ne, aur kuch aur hi ho gaya
+
+Tumhara ye kehna "go with the flow" Kaaaashhh "go with the direction hota"
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+
+
+<p>
+    Kya tumhe kabhi nhi lga ki mene tumhe kbhi bhi ek second k lie bhi pyaar kiaa????
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+    Ashishhh....Didn't my eyes tell you that I wanted you badly???
+   
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+    Jo tha mere dil mein, wo sirf attachment nahi tha… na hi time pass thaaa,,,,, it was love. Real wala love...jo ki tumhe dikh ni rha tha..
+Hum labon se kabhi apna haal-e-dil keh nahi paaye… aur shayad tum meri khamoshi samajh nahi paaye..
+</p>
+</div>
+
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+    
+  
+<p>
+  Jab maine tumhe jaane ko bola tha, sach mein jaane dena nahi chahti thi. I thought maybe tum ruk jaoge… thoda sa fight karoge humare liye,,, ki ye ky kh rhi h tu... But you respected my words…wow ashish baby woww aur wahi moment tha jab samajh aaya ki give up karna shayad tumhare liye easy tha
+  Ha manaa tum preshan ho rhe the mere sath nhi dekha ja rha tha tumse kuch...nhi saha jarha tha toh kya mtlbbbbbbb tum kuch bhi krlogeeee....tumhe mai ky ni de rhi thi?? btaooo.... ha bss tumhe pyaar km lg rha tha mera pr shayad tumhe ni pta ush wqt mere pr ky gujar rhi thi.....
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">    
+  
+<p>
+  My love for you was always real. Maybe main immature thi, shayad unknowingly maine tumhe hurt kiya ho… but mera intention kabhi galat nahi tha 
+Sach bolu… I don’t even know kya chal raha hai ab.
+To be honest, main tumhe bilkul bhi khona nahi chahti huuuu..... Main chahti thi ki puri life tumhare sath time spend karu. Mujhe pata hai tum bhi mujhe khona nahi chahte ho… but shayad ab situations change ho gayi hain. Shayad hum chaah kar bhi saath nahi reh paayenge… aur ye accept karna sabse mushkil part hai.
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Haan, galti hum dono ki thi. Shuruaat bhi hum dono ne ki, emotions bhi dono ne feel kiye. Equal mistake thi — I agree.
+Par tum jab kehte ho ki main adjust kyu nahi kar pa rahi… bhai kaise karu? tumne hi kaha tha jb tk esa chlega chlne denge mere sth wale time pr pr tumhe toh chahie ki koi mre mite tum pr
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Tum sab kuch jaante hue mere paas aaye the. Sab sach pata hone ke baad bhi tumne ye step liya.
+Aur ab tum chahte ho ki main adjust kar lu? tumm merii aankhoon k aagee kisi or k ho rheee ho yarrrr....Mai tumhe kisi aur ke sath apni aankhon ke saamne dekh lu?
+We are girls… mere se nahi hoga.....maaf krnaa muje...
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Tum bahut strong ho… honestly mujhe samajh hi nahi aata tumne itna sab kaise jhela aur phir bhi mujhe itna pyaar kaise diya.
+Tumne bola tha na — “jab tak pyaar de sakta hu tab tak rahunga.”
+Par mujhe aise nahi rehna… jahan main tumhe kisi aur ke sath share karu ya dekhun.
+Main utni strong nahi hu… nhiii huuuuu maiiii yrrrrr ashishhhhhh....muje  y sbke baad office m silent attack aa chuka h..mai ab or nhi sah skti hu y sb...
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Mujhe nahi pata tumne kaise manage kar liya sab… par main nahi kar pa rahi.
+Mere dil me sach me dard hota hai yrr....tum ush chiz s suffer kbhi ni kr skte jisse mai krrhi huu.....
+Tum shayad kabhi samajh bhi nahi paoge ki mere andar kya chal raha hai…
+par believe me, main har din thoda thoda toot rahi hu...
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+  
+<p>
+    Ashishhh....Kahaa tha na mene ki thoda time dete h hum... itni koi jldi nhi h...ruk kr krenge y sb...thoda ek dusre ko or janne ki need h pr tum nhi maane and tumne kaha "this is our moment baby pleaseee ishe kharab mt krr" at mithila...
+    Kaaashh mai tumhe thoda or rok leti vo ek guilt mere mnn m ni rehta pr khair koi nhi tumhre mnn m guilt ni rehna chahie ki ek ldki k sth itna rha or vo sb nhi kr paya..
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Tum mera pehla ya dusra or shayaad akhiriii pyar nahi ho.
+Tum mera vo pyar ho jo na pehle kisi se hua,
+na tumhare baad kisi se hoga.
+
+* Vo waisa raha hi nahi… jaisa mujhe mila tha.
+
+* Waqt toh guzar jayega,
+ye sara masla yaadon ka hai.
+</p>
+</div>
+
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Tumhara last behaviour meri puri choice par sawal chhod gaya...kese ekdum s change hona tumharaa jese sb kuch fake kr rhe the ab tk
+Mai accept kar chuki hu sab kuch… still somewhere it hurts 😔
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Kabhi kabhi mann karta hai text karu, sab normal kar du…
+but now you are not mine anymore, sweet boy 🤍
+Shayad tum mujhe bhool bhi gaye ho jis trh s tum flow m ho abhi…. or lgta h jese tumhri life mai kuchh nhi thi
+aur haan, thoda sa mera ego bhi toot gaya vrna sochti thi ki yaar vo muj pr mrr-mitata h....chlo accha huaa y toh
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Still I am all yours, Ashish… but somewhere…
+<br> Tumko itna hurt kar chuki thi ki tumhe meri saari feelings fake lagne lagi thi tumkoo.
+Sorry for this… I really hurt you. </br>
+
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+I wish I had hugged you a little tighter that day and spent more time with you.(8-May-2026/JLN-metro)
+I didn’t know it would be the last day….. muje lga hum fir milenge but......sorry
+I really loved you and I am still loving you so much.
+I am really sorry Ashish… maaf karna mujhe.
+
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Teri kami ab tujse bhi puri nahi hogi,
+kyunki tu vo raha hi nahi jo mujhe chahiye tha... palak jhapkte jo tum change hue ho....gosshhhh
+..Or vo song yaad ata h "tumse milna puarni dilli m, chor aye nishani dilli me"...chor di mene vo nishani saari
+
+
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Tum hi mere life m aaye....baate shuru ki..efforts lgaye...pyar kia bharkr...care ki or jb y sb muje hogyaa tohhhhh chor dia muje mere peak pr???? KYUU???m meri life toh shi chl rhi thi 
+Na kisi ki jrurtt thi..na koi rista bnane ayi thi pr tum aaye meri life mai...muje pyar krne lge..mera apna bn gye
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+pta nhi kyuu mera dil ni maantaaa ye sb  prrrr  tumhara sbb muje fake lg rha h jo bhi the tum mere sth sb kuch...bs act krr rhe the kyunki tumhe shi lgrha tha tumhara mnn chah rha tha....tumne dikha di ki haan y dilli wale ladke kese hote h....bs apni mann mrji krke</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Tumhe y sb hi krna tha toh kisi or ko target krlete muje kyu....tumhe pta chl gya tha n ki mai kesi hu fhir bhi muje todaaa yarrrr..chor dete muje tb hi..syddd itni bhi buri nhi hu ya itna glt  ni kia ki muje ye sb jhelna pd rha h
+<br> Pr hn theek huaa kyunki mai dusri trf dusre insaan k sath cheat krrhi hu ushe pta nhi toh mere sath bhi shi huaa jo huaa....
+</br>
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+mai y diary share nhi krna chahti thi pr ab or nhi rha jyega mujse..muje lga syd kuch hope h baaki pr ab nhi h kuch bhi
+jln stadium k baad lga syd kuch shi ho skta h jo baate tumne share ki mujse aate jate time prrrrrr dekho khudkoo..
+Muje lg rha tha ki Shayaad y kh do ki Pallavi ye sb prank tha, esa kuch bhi nhi h, jese phle prank kia vesa,,,, pr mai galat soch rhi thi.😊
+
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Tum promises toh itni jldi krte..baate bol bhi jate pr side dekhte hi mukur jate ho esa kb kaha vo ush mean s ni kaha tha.....
+Kaha tha na mene ki mt kro mujse itne vaade mt bola kro tum mante hi ni the ab dekho kon apni hi baato s fisal gya..ek number k paltu ho bhaii tummm
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+ush ldki ka dil mt todna....vo pyar krti h tumse..tum koi samjhota mt krna..nhi krna tumhe kuch toh abhi mna krdena kyunki y tumhara time pass kisi ki feelings k sath khel jata h......past m bhi yhi kia h kuch jgh
+apni khusi or moj msti k lie dusro ko dukh dard dena..vo efforts lga rhi h toh tum bhi do..tumtoh efforts or reassurance m peeche ni ho..ushe time do yarrr or ek do baar khi bahar jakr like park wgrh vha milo baate share kro, time spent kro,,ek dusre ko or smjho
+
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Ha toh come to the our story,,,Hr ek love story m ek villain jrur hota h yha toh hum dono ek dusre k khud or vo tumhri palak khair vo nhi tum khudd hi ho
+
+</p>
+</div> 
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Kehti thi n ki tum kbhi sudhr nhi skte...
+Achaa hua ki tum muje phle kbhi nhi mile... bach gyi m or I wish ki hum fhir se na mile kbhi.
+Bhaiii muje toh y soch kr hshi aarhi h ki ek week m deeep love logo ko kese hojataa h yrr....ush din jb mai ghr s aayi metro pr mile, tb dekha tha mene tumko for Molly, 
+Tumhe hr kisi s itni hi jldi ho jata h vo bhi true wala deep love....broohhh 🤣🤣...kitni acchi acting krte ho... Actor bnnne k lie try kr skte ho Ap.
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Atleast, I never lied when I said I love you, I miss you, I like you, na hi altu faltu promises kie, baate bnayi ki tum mere final act of love ho, tum bs last, tumhre baad koi nhi, tumhre sath esa nhi krungi vesa nhi krungi....
+
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+    Khair choro....
+All the best of luck for your bright future and kabhi mile toh tumhe ek acchi position pr dekhna chahungi kuch accha krte hue...
+Tum tumhri life m khush rehna ek acchi si ladki mile jo sath de tumhara or kaash tum sirf ushko hi pyar kro...duniyadari ko chor do...kisi ki baato m mt ana pr y nhi ki khud hi mnn mrji krna
+
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+<br>Happy ending nahi mili…</br>
+<br>par jo tha, wo mere side s fake bhi nahi tha... ye yaad rkhna bss or bhul jao toh koi dikkt ni h ab toh..</br>
+<br>Tum meri life ka ek beautiful chapter rahoge,</br>
+jise main kabhi erase nahi kar paungi.
+
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+We went from strangers to something… and back to strangers again.
+    Funny how someone can become a stranger twice in one lifetime. Hainnaa
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+We didn’t get a happy ending… 💔
+par humari beginning sach me bohot khooooobsoooratt thiiiii 😕
+Mere liye kisi behtareen love story se kam nahi thi.
+
+</p>
+</div>
+
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Please I request you muje call mssg ya khi s contact nhi krna...aap apni life m khush rehna..kaafi log he aapke passs or mai meri life me khush ho jaungi..ha thoda time lgega but one day sb sorted ho jygeaa....
+
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Bs haan, jb shaadi kro tb muje khi se bhi contact krke bula lena, mai "channa mereya" pr dance krungi, I swear......please ek request h..khair tbtk mai yaad ni rhungi....
+Tumhre mnn m koi grudge n rhe, if you want to share something you can.....here "Codedpad - Lavi@Ashu". 
+</p>
+</div>
+
+<div class="page" onclick="turn(this,'music4.mp3')">
+<p>
+Kabhi kabhi stories ka end happy nahi hota…
+par iska matlab ye nahi ki story beautiful nahi thi 🤍
+</p>
+</div>
+
+</div> <!-- BOOK END -->
+
+
+
+</div>
+
+<script>
+
+let pages=document.querySelectorAll(".page");
+
+pages.forEach((p,i)=>{
+p.style.zIndex=pages.length-i;
+});
+
+function start(){
+document.getElementById("intro").style.display="none";
+document.getElementById("book").style.display="block";
+}
+
+function turn(page){
+page.classList.toggle("flipped");
+}
+
+</script>
+
+</body>
+</html>
+```
