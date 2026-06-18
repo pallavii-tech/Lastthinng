@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -81,22 +81,39 @@ justify-content:center;
 align-items:center;
 text-align:center;
 
-line-height:1.8;
-font-size:18px;
+line-height:1.5;
+font-size:14px;
 border-radius:8px;
 color:#222;
+
+overflow-y:auto;
 }
 
-.page::before{
-content:"";
-position:absolute;
-left:0;
-top:0;
-height:100%;
-width:18px;
-background:linear-gradient(to right,rgba(0,0,0,0.15),transparent);
-border-radius:8px 0 0 8px;
+@media (max-width:600px){
+
+.book{
+width:95vw;
+height:85vh;
 }
+
+.page{
+padding:20px 20px 20px 45px;
+font-size:12px;
+line-height:1.4;
+overflow-y:auto;
+}
+
+h1,h2,h3{
+font-size:20px;
+}
+
+button{
+font-size:16px;
+padding:10px 20px;
+}
+
+}
+
 
 .cover{
 background:linear-gradient(135deg,#5e3a4a,#7a4b5f,#3b2b34);
@@ -1169,4 +1186,3 @@ page.classList.toggle("flipped");
 
 </body>
 </html>
-```
